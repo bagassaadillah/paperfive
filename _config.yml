@@ -1,13 +1,13 @@
 # Site settings
-title: PHOTORAMA
+title: PAPERFIVE
 email: ""
-description: "Photo Journal"
+description: "Online Sejak 2018"
 url: "https://bagassaadillah.github.io"
 baseurl: "/paperfive"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
+facebook_username: "bagassaadillah12"
+twitter_username: "bagassaadillah"
+instagram_username: "storepaperfive"
+github_username:  "bagassaadillah"
 deviantart_username: ""
 flickr_username: ""
 discus_shortname: ""
@@ -15,10 +15,10 @@ share: true
 
 # Owner/author information
 owner:
-  name:   photorama
-  avatar: avatar.png
+  name:   Bagas Saadillah Arkan
+  avatar: bagas_avatar.png
   favicon: favicon.ico
-  info: photography website template
+  info: foundər of @storepaperfive 
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
