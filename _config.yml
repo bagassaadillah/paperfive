@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://paperfive.co.id/gallery/"  
-  - JOURNAL: "https://paperfive.co.id/journal/"
-  - ABOUT: "https://paperfive.co.id/about/"
+  - GALLERY: "https://paperfive.co.id/paperfive/gallery/"  
+  - JOURNAL: "https://paperfive.co.id/paperfive/journal/"
+  - ABOUT: "https://paperfive.co.id/paperfive/about/"
 
 # All translation keys
 translations:
