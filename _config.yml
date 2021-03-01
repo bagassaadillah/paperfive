@@ -2,8 +2,8 @@
 title: PAPERFIVE
 email: "storepaperfive@gmail.com"
 description: "Online Sejak 2018"
-url: "https://bagassaadillah.github.io"
-baseurl: "/paperfive"
+url: "https://paperfive.co.id"
+baseurl: "paperfive.co.id"
 facebook_username: "bagassaadillah12"
 twitter_username: "bagassaadillah"
 instagram_username: "storepaperfive"
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://bagassaadillah.github.io/paperfive/gallery/"  
-  - JOURNAL: "https://bagassaadillah.github.io/paperfive/journal/"
-  - ABOUT: "https://bagassaadillah.github.io/papefive/about/"
+  - GALLERY: "https://paperfive.co.id/gallery/"  
+  - JOURNAL: "https://paperfive.co.id/journal/"
+  - ABOUT: "https://paperfive.co.id/about/"
 
 # All translation keys
 translations:
