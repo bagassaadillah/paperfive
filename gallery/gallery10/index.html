@@ -1,99 +1,59 @@
----
-layout: page
-title: "album"
-description: "masonry"
-active: gallery
-header-img: "img/gallery-bg.jpg"
-album-title: "my 9th album"
-images:
- - image_path: /gallery/archive/g09/bg1.jpg
-   caption: IMAGE TITLE
-   mfp-title: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g09/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g09/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
----
-
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta content="charset=utf-8">
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
 </head>
+<body>
 
-    <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+<div class="gallery">
+  <a target="_blank" href="https://akcdn.detik.net.id/visual/2021/01/18/selena-gomez_169.png">
+    <img src="https://akcdn.detik.net.id/visual/2021/01/18/selena-gomez_169.png?w=650" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
+<div class="gallery">
+  <a target="_blank" href="https://i.ibb.co/gTRCV8B/Copy-of-BANNER-INVITE-3.png">
+    <img src="https://i.ibb.co/gTRCV8B/Copy-of-BANNER-INVITE-3.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+<div class="gallery">
+  <a target="_blank" <a href='' target='_blank'><img src='https://i.postimg.cc/nzLYK16y/38-EF8815-AC7-A-495-F-A131-34244-D3601-B0-min-min.jpg' border='0' alt='38-EF8815-AC7-A-495-F-A131-34244-D3601-B0-min-min'/></a>>
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-				
-{% endfor %}
+</body>
+</html>
 
-			</div>
-
-		</div><!-- END .wrapper -->
-	</section>
-
-<!-- jQuery -->    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-          type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-      image: {
-         titleSrc: function(item) {
-              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
-        }
-          // other options
-      });
-});
-    </script>
-
-</body></html>
